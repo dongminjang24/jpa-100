@@ -15,4 +15,9 @@ public class QuestionController {
 	public void firstUrl() {
 		log.info("firstUrl() 호출됨");
 	}
+
+	@GetMapping("/helloworld")
+	public String helloword() {
+		return "Hello World";
+	}
 }
