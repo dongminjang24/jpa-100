@@ -1,0 +1,50 @@
+###
+GET localhost:8080/api/notice
+
+
+###
+GET localhost:8080/api/notice/count
+
+###
+POST localhost:8080/api/notice
+Content-Type: application/json
+
+{
+    "title": "notice1notice1notice1notice1notice1",
+    "content": "noticenotice1notice11notice1notice1noticenotice1notice11notice1notice1noticenotice1notice11notice1notice1"
+}
+
+
+###
+GET localhost:8080/api/notice/1
+
+
+###
+PUT localhost:8080/api/notice/1
+Content-Type: application/json
+
+{
+    "title": "수정됐나",
+    "content": "했다"
+}
+
+
+###
+DELETE localhost:8080/api/notice/1
+
+
+###
+POST localhost:8080/api/noticeList
+Content-Type: application/json
+
+{
+  "ids": [1,5]
+}
+
+###
+DELETE localhost:8080/api/noticeAll
+
+
+###
+GET localhost:8080/api/recentNotice?size=3
+
